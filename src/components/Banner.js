@@ -4,14 +4,45 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
+  const [loopIndex, setLoopIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [
-    'Software Engineer',
-    'Frontend Developer',
-    'Backend Developer',
-  ];
-  const [text, setText] = useState('');
+  const [displayText, setDisplayText] = useState('');
+  const [typingSpeed, setTypingSpeed] = useState(100);
+  const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, typingSpeed);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [displayText]);
+
+  const tick = () => {
+    let i = loopIndex % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, displayText.length - 1)
+      : fullText.substring(0, displayText.length + 1);
+
+    setDisplayText(updatedText);
+
+    if (isDeleting) {
+      setTypingSpeed(100);
+    } else {
+      setTypingSpeed(50);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setTypingSpeed(2000);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopIndex(loopIndex + 1);
+    }
+  };
 
   return (
     <section className='banner' id='home'>
