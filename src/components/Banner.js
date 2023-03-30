@@ -8,7 +8,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState('');
   const [typingSpeed, setTypingSpeed] = useState(100);
-  const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+  const toRotate = ['Software Engineer', 'Web Developer', 'UI/UX Designer'];
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
               <br></br>
               <span className='wrap'>{displayText}</span>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                A Full Stack Software Engineer skilled at creating web
+                applications with intuitive user interfaces, excelled in
+                developing elegant solutions to complex problems. Committed to
+                never stop learning and dive headfirst into new concepts
               </p>
               <button onClick={() => console.log('connect')}>
                 Let's connect
