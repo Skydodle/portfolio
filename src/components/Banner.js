@@ -53,7 +53,7 @@ export const Banner = () => {
             <h1>
               {`Hi I'm Johnny `}
               <br></br>
-              <span className='wrap'>{displayText}</span>
+              <span className='wrap'>&nbsp;{displayText}</span>
               <p>
                 A Full Stack Software Engineer skilled at creating web
                 applications with intuitive user interfaces, excelled in
