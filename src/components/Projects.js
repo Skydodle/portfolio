@@ -1,6 +1,6 @@
 import { Col, Container, Row, Nav, Tab } from 'react-bootstrap';
 
-export const Project = () => {
+export const Projects = () => {
   const projects = [];
   return (
     <section className='project' id='project'>
