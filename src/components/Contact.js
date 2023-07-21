@@ -4,12 +4,29 @@ import contactImg from '../assets/img/contact-img.svg';
 
 export const Contact = () => {
   const [formDetails, setFormDetails] = useState({});
+  const [buttonText, setButtonText] = useState('Send');
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText('Sending...');
+    let response = await fetch('http://localhost:5000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify(formDetails),
+    });
+    setButtonText('Send');
+    let result = await response.json();
+    console.log(result);
+    // alert(result.status);
   };
 
   return (
@@ -21,7 +38,7 @@ export const Contact = () => {
           </Col>
           <Col size={12} md={6} className='wow fadeIn'>
             <h2>Get In Touch</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <Row>
                 <Col size={12} sm={6} className='px-1'>
                   <input
@@ -57,8 +74,9 @@ export const Contact = () => {
                     placeholder='Message'
                     onChange={(e) => onFormUpdate('message', e.target.value)}
                   ></textarea>
-                  <button>
-                    <span>Send</span>
+
+                  <button type='submit'>
+                    <span>{buttonText}</span>
                   </button>
                 </Col>
               </Row>
