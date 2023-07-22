@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import linkedinIcon from '../assets/img/nav-icon1.svg';
+import facebookIcon from '../assets/img/nav-icon2.svg';
+import instagramIcon from '../assets/img/nav-icon3.svg';
 
-// Extracted constants
 const NAV_SECTIONS = ['home', 'skills', 'projects'];
-const NAV_ICONS = [navIcon1, navIcon2, navIcon3];
+const SOCIAL_LINKS = [
+  { url: 'https://www.linkedin.com/in/johnnyhcwu/', icon: linkedinIcon },
+  { url: 'https://www.facebook.com/johnny.h.wu.1/', icon: facebookIcon },
+  { url: 'https://www.instagram.com/skydodle/', icon: instagramIcon },
+];
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -32,7 +35,7 @@ const NavBar = () => {
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
         <Navbar.Brand as={HashLink} smooth to='/'>
-          <img src={logo} alt='Logo' />
+          <span className='logo'>JW</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -54,9 +57,9 @@ const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              {NAV_ICONS.map((icon, idx) => (
-                <a href='#' key={idx}>
-                  <img src={icon} alt={`Nav Icon ${idx + 1}`} />
+              {SOCIAL_LINKS.map((link, idx) => (
+                <a href={link.url} target='_blank' rel='noreferrer' key={idx}>
+                  <img src={link.icon} alt={`Social Icon ${idx + 1}`} />
                 </a>
               ))}
             </div>
