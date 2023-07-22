@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
+import { HashLink } from 'react-router-hash-link';
 
 export const Banner = () => {
   const [loopIndex, setLoopIndex] = useState(0);
@@ -60,10 +61,12 @@ export const Banner = () => {
                 developing elegant solutions to complex problems. Committed to
                 never stop learning and dive headfirst into new concepts
               </p>
-              <button onClick={() => console.log('connect')}>
-                Let's connect
-                <ArrowRightCircle size={25} />
-              </button>
+              <HashLink smooth to='#connect'>
+                <button>
+                  Let's connect
+                  <ArrowRightCircle size={25} />
+                </button>
+              </HashLink>
             </h1>
           </Col>
           <Col xs={12} md={6} xl={5}>
