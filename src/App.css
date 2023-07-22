@@ -244,6 +244,22 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+.logo {
+  background: -webkit-linear-gradient(
+    45deg,
+    #00ffff,
+    #1e90ff,
+    #4169e1,
+    #00008b
+  );
+  -webkit-background-clip: text;
+  background-clip: text; /* This won't be recognized by non-Webkit browsers */
+  -webkit-text-fill-color: transparent;
+  color: #4169e1; /* Fallback color for non-Webkit browsers */
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
