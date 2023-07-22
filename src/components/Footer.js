@@ -1,9 +1,14 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { MailchimpForm } from './MailchimpForm';
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import linkedinIcon from '../assets/img/nav-icon1.svg';
+import facebookIcon from '../assets/img/nav-icon2.svg';
+import instagramIcon from '../assets/img/nav-icon3.svg';
+
+const SOCIAL_LINKS = [
+  { url: 'https://www.linkedin.com/in/johnnyhcwu/', icon: linkedinIcon },
+  { url: 'https://www.facebook.com/johnny.h.wu.1/', icon: facebookIcon },
+  { url: 'https://www.instagram.com/skydodle/', icon: instagramIcon },
+];
 
 export const Footer = () => {
   return (
@@ -12,19 +17,15 @@ export const Footer = () => {
         <Row className='align-items-center'>
           <MailchimpForm />
           <Col size={12} sm={6}>
-            <img src={logo} alt='Logo' />
+            <span className='logo'>JW</span>
           </Col>
           <Col size={12} sm={6} className='text-center text-sm-end'>
             <div className='social-icon'>
-              <a href='#'>
-                <img src={navIcon1} alt='Icon' />
-              </a>
-              <a href='#'>
-                <img src={navIcon2} alt='Icon' />
-              </a>
-              <a href='#'>
-                <img src={navIcon3} alt='Icon' />
-              </a>
+              {SOCIAL_LINKS.map((link, idx) => (
+                <a href={link.url} target='_blank' rel='noreferrer' key={idx}>
+                  <img src={link.icon} alt={`Social Icon ${idx + 1}`} />
+                </a>
+              ))}
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
           </Col>
