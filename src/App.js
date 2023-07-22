@@ -6,7 +6,7 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-// CSS imports go last
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
