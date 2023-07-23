@@ -1,6 +1,8 @@
 import { Col, Container, Row, Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
+import shredderImage from '../assets/img/shredder.png';
+import SDCImage from '../assets/img/SDC.png';
 
 export const Projects = () => {
   const projects = [
@@ -9,7 +11,7 @@ export const Projects = () => {
       description:
         'Web app for shelterd dog database search with filters, personalized favorites & a match generator',
       imgUrl: 'https://media.giphy.com/media/2sXHaogN0rtyuN1j4t/giphy.gif',
-      techStack: 'React - Typescript - Tailwind - Node - Express',
+      techStack: 'React - Typescript - Tailwind - Node - PostgreSQL',
       githubLink: 'https://github.com/Skydodle/fetch-pups',
       liveLink: 'https://skydodle.github.io/fetch-pups/',
     },
@@ -24,10 +26,38 @@ export const Projects = () => {
     },
     {
       title: 'Hawk Shop',
-      description: 'E-Commerce web store for latest kicks and street wear',
+      description:
+        'E-Commerce web store for latest kicks and street wear, featuring favorite list for users, Q&A, and Reviews ',
       imgUrl: 'https://media.giphy.com/media/vZhhLK5jwgb0s03Jzk/giphy.gif',
-      techStack: 'React - Styled Components - Node - Express',
+      techStack: 'React - Styled Components - Node - REST',
       githubLink: 'https://github.com/Hawk-Shop/Katana',
+      liveLink: null,
+    },
+    {
+      title: 'Sweet Niblets',
+      description:
+        'Web app for karaoke with facial recognition avatar & audio recording, utilizing face-api, and Youtube API',
+      imgUrl: 'https://media.giphy.com/media/tJ4MNQs3B1M2J5YonR/giphy.gif',
+      techStack: 'NextJS - Tailwind - Vercel - Cypress',
+      githubLink: 'https://github.com/Kowalski-Group/rfp2204-blue-ocean',
+      liveLink: null,
+    },
+    {
+      title: 'Shredder Hub',
+      description:
+        'Clone of snowboard web store using web scrapper for building MongoDB Atlas database & NextJS frontend',
+      imgUrl: shredderImage,
+      techStack: 'NextJS - CSS3 - Node - MongoDB Atlas',
+      githubLink: 'https://github.com/Skydodle/Shredder-Hub',
+      liveLink: null,
+    },
+    {
+      title: 'System Design',
+      description:
+        'Optimized & deployed with database, API, proxy & host servers built to support an existing frontend with scalability',
+      imgUrl: SDCImage,
+      techStack: 'Node - Express - PostgreSQL - AWS EC2 - NGINX',
+      githubLink: 'https://github.com/SDC-GoldEngine',
       liveLink: null,
     },
   ];
@@ -38,10 +68,10 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Some of my recent work showcasing my skills in Full Stack
+              Development, as well as Open Source contributions. Each project
+              demonstrates my ability to handle diverse aspects of web
+              development.
             </p>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
               <Nav
@@ -50,13 +80,10 @@ export const Projects = () => {
                 id='pills-tab'
               >
                 <Nav.Item>
-                  <Nav.Link eventKey='first'>Front End</Nav.Link>
+                  <Nav.Link eventKey='first'>Full Stack</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey='second'>Back End</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey='third'>Open Source </Nav.Link>
+                  <Nav.Link eventKey='second'>Open Source</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -68,7 +95,6 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='second'>Lorum Ipsum</Tab.Pane>
-                <Tab.Pane eventKey='third'>Lorum Ipsum</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
