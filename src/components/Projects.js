@@ -6,18 +6,29 @@ export const Projects = () => {
   const projects = [
     {
       title: 'FetchPups',
-      description: 'Web app for shelterd dog database search',
+      description:
+        'Web app for shelterd dog database search with filters, personalized favorites & a match generator',
       imgUrl: 'https://media.giphy.com/media/2sXHaogN0rtyuN1j4t/giphy.gif',
+      techStack: 'React - Typescript - Tailwind - Node - Express',
+      githubLink: 'https://github.com/Skydodle/fetch-pups',
+      liveLink: 'https://skydodle.github.io/fetch-pups/',
     },
     {
       title: 'Spotify Profile',
-      description: 'Web app for visualizing personalized Spotify profile',
+      description:
+        'Web app for visualizing personalized Spotify profile utilizing the Spotify Web API and OAuth2.0',
       imgUrl: 'https://media.giphy.com/media/5PmikwWSPNTDNIR3J4/giphy.gif',
+      techStack: 'React - Styled Components - Node - Express',
+      githubLink: 'https://github.com/Skydodle/spot-profile',
+      liveLink: null,
     },
     {
       title: 'Hawk Shop',
       description: 'E-Commerce web store for latest kicks and street wear',
       imgUrl: 'https://media.giphy.com/media/vZhhLK5jwgb0s03Jzk/giphy.gif',
+      techStack: 'React - Styled Components - Node - Express',
+      githubLink: 'https://github.com/Hawk-Shop/Katana',
+      liveLink: null,
     },
   ];
   return (
@@ -39,13 +50,13 @@ export const Projects = () => {
                 id='pills-tab'
               >
                 <Nav.Item>
-                  <Nav.Link eventKey='first'>Full Stack</Nav.Link>
+                  <Nav.Link eventKey='first'>Front End</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey='second'>Back End</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey='third'>tab 3</Nav.Link>
+                  <Nav.Link eventKey='third'>Open Source </Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
