@@ -5,7 +5,6 @@ import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
-import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Skills = () => {
   const responsive = {
@@ -35,15 +34,16 @@ export const Skills = () => {
           <Col>
             <div className='skill-bx'>
               <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
+              <p>Tools and technologies I use to bring products to life</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className='skill-slider'
               >
+                <div className='item'>
+                  <img src={meter1} alt='image' />
+                  <h5>Javascript</h5>
+                </div>
                 <div className='item'>
                   <img src={meter1} alt='image' />
                   <h5>Web Development</h5>
@@ -57,8 +57,20 @@ export const Skills = () => {
                   <h5>Typescript</h5>
                 </div>
                 <div className='item'>
+                  <img src={meter3} alt='image' />
+                  <h5>React</h5>
+                </div>
+                <div className='item'>
                   <img src={meter1} alt='image' />
                   <h5>Restful APIs</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='image' />
+                  <h5>Tailwind</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='image' />
+                  <h5>Styled-Components</h5>
                 </div>
               </Carousel>
             </div>
