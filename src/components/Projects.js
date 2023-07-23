@@ -3,8 +3,31 @@ import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import shredderImage from '../assets/img/shredder.png';
 import SDCImage from '../assets/img/SDC.png';
+import HFLAImage from '../assets/img/HFLA.png';
+import HFLAImage2 from '../assets/img/HFLA2.png';
 
 export const Projects = () => {
+  const openSourceProjects = [
+    {
+      title: 'Hack For LA',
+      description:
+        'Volunteer for Website Team. Solved Github issues by developing FE features, fixing bugs & creating documentations',
+      imgUrl: HFLAImage,
+      techStack: 'Javascript - HTML - CSS - Docker - Jekyll - Figma',
+      githubLink: 'https://github.com/hackforla/website',
+      liveLink: 'https://www.hackforla.org/',
+    },
+    {
+      title: 'Hack For LA',
+      description:
+        'Volunteer for Merge Team. Maintained Github codebase & create new issues. Onboard new devs. Perform code reviews & merge PRs',
+      imgUrl: HFLAImage2,
+      techStack: 'Github Pages - Github Action - Docker - Jekyll ',
+      githubLink: 'https://github.com/hackforla',
+      liveLink: 'https://www.hackforla.org/',
+    },
+  ];
+
   const projects = [
     {
       title: 'FetchPups',
@@ -94,7 +117,13 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey='second'>Lorum Ipsum</Tab.Pane>
+                <Tab.Pane eventKey='second'>
+                  <Row className='justify-content-md-center'>
+                    {openSourceProjects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
