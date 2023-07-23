@@ -72,6 +72,22 @@ export const Skills = () => {
                   <img src={meter2} alt='skills' />
                   <h5>Styled-Components</h5>
                 </div>
+                <div className='item'>
+                  <img src={meter3} alt='skills' />
+                  <h5>Node</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='skills' />
+                  <h5>GraphQL</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter3} alt='skills' />
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='skills' />
+                  <h5>MongoDB</h5>
+                </div>
               </Carousel>
             </div>
           </Col>
