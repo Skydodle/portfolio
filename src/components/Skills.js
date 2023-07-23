@@ -41,35 +41,35 @@ export const Skills = () => {
                 className='skill-slider'
               >
                 <div className='item'>
-                  <img src={meter1} alt='image' />
+                  <img src={meter1} alt='skills' />
                   <h5>Javascript</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter1} alt='image' />
+                  <img src={meter1} alt='skills' />
                   <h5>Web Development</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter2} alt='image' />
+                  <img src={meter2} alt='skills' />
                   <h5>Responsive Design</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter3} alt='image' />
+                  <img src={meter3} alt='skills' />
                   <h5>Typescript</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter3} alt='image' />
+                  <img src={meter3} alt='skills' />
                   <h5>React</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter1} alt='image' />
+                  <img src={meter1} alt='skills' />
                   <h5>Restful APIs</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter2} alt='image' />
+                  <img src={meter2} alt='skills' />
                   <h5>Tailwind</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter2} alt='image' />
+                  <img src={meter2} alt='skills' />
                   <h5>Styled-Components</h5>
                 </div>
               </Carousel>
