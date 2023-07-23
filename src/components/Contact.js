@@ -26,7 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    let response = await fetch('http://localhost:5000/contact', {
+    let response = await fetch('http://localhost:4000/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -87,7 +87,7 @@ export const Contact = () => {
                       <Col size={12} sm={6} className='px-1'>
                         <input
                           type='text'
-                          value={formDetails.lasttName}
+                          value={formDetails.lastName}
                           placeholder='Last Name'
                           onChange={(e) =>
                             onFormUpdate('lastName', e.target.value)
