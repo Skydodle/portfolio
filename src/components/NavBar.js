@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import linkedinIcon from '../assets/img/nav-icon1.svg';
-import facebookIcon from '../assets/img/nav-icon2.svg';
+import githubIcon from '../assets/img/nav-icon2.svg';
 import instagramIcon from '../assets/img/nav-icon3.svg';
 
 const NAV_SECTIONS = ['home', 'skills', 'projects'];
 const SOCIAL_LINKS = [
   { url: 'https://www.linkedin.com/in/johnnyhcwu/', icon: linkedinIcon },
-  { url: 'https://www.facebook.com/johnny.h.wu.1/', icon: facebookIcon },
+  { url: 'https://github.com/Skydodle', icon: githubIcon },
   { url: 'https://www.instagram.com/skydodle/', icon: instagramIcon },
 ];
 

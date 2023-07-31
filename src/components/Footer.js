@@ -1,12 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { MailchimpForm } from './MailchimpForm';
 import linkedinIcon from '../assets/img/nav-icon1.svg';
-import facebookIcon from '../assets/img/nav-icon2.svg';
+import githubIcon from '../assets/img/nav-icon2.svg';
 import instagramIcon from '../assets/img/nav-icon3.svg';
 
 const SOCIAL_LINKS = [
   { url: 'https://www.linkedin.com/in/johnnyhcwu/', icon: linkedinIcon },
-  { url: 'https://www.facebook.com/johnny.h.wu.1/', icon: facebookIcon },
+  { url: 'https://github.com/Skydodle', icon: githubIcon },
   { url: 'https://www.instagram.com/skydodle/', icon: instagramIcon },
 ];
 
