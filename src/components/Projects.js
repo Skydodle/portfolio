@@ -103,7 +103,7 @@ export const Projects = () => {
                 id='pills-tab'
               >
                 <Nav.Item>
-                  <Nav.Link eventKey='first'>Full Stack</Nav.Link>
+                  <Nav.Link eventKey='first'>Applications</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey='second'>Open Source</Nav.Link>
