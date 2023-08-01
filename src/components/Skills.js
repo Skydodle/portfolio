@@ -47,6 +47,14 @@ export const Skills = () => {
     },
     { src: meter1, name: 'Styled-Components' },
     {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+      name: 'HTML5',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+      name: 'CSS3',
+    },
+    {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
       name: 'Node',
     },
@@ -97,18 +105,16 @@ export const Skills = () => {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
       name: 'Figma',
     },
-    {
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-      name: 'HTML5',
-    },
-    {
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-      name: 'CSS3',
-    },
     { src: meter1, name: 'Web Development' },
-    { src: meter2, name: 'Responsive Design' },
+    { src: meter3, name: 'Responsive Design' },
     { src: meter2, name: 'Microservices' },
   ];
+
+  // Split skills into chunks of two
+  const skillChunks = [];
+  for (let i = 0; i < skills.length; i += 2) {
+    skillChunks.push(skills.slice(i, i + 2));
+  }
 
   return (
     <section className='skill' id='skills'>
@@ -122,17 +128,19 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className='skill-slider'
-                partialVisible
-                itemClass='carousel-item-padding-40-px'
               >
-                {skills.map((skill) => (
-                  <div className='item' key={skill.name}>
-                    {skill.src ? (
-                      <img src={skill.src} alt={skill.name} />
-                    ) : (
-                      <i className={skill.icon}></i>
-                    )}
-                    <h5>{skill.name}</h5>
+                {skillChunks.map((skillChunk, chunkIndex) => (
+                  <div className='item' key={chunkIndex}>
+                    {skillChunk.map((skill, index) => (
+                      <div className='skill-item' key={skill.name}>
+                        {skill.src ? (
+                          <img src={skill.src} alt={skill.name} />
+                        ) : (
+                          <i className={skill.icon}></i>
+                        )}
+                        <h5>{skill.name}</h5>
+                      </div>
+                    ))}
                   </div>
                 ))}
               </Carousel>
