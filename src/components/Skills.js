@@ -27,6 +27,89 @@ export const Skills = () => {
     },
   };
 
+  const skills = [
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      name: 'Javascript',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg',
+      name: 'Typescript',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      name: 'React',
+    },
+    { icon: 'devicon-nextjs-original font-icons', name: 'NextJS' },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+      name: 'Tailwind',
+    },
+    { src: meter1, name: 'Styled-Components' },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+      name: 'Node',
+    },
+    { icon: 'devicon-express-original font-icons', name: 'Express' },
+    { src: meter1, name: 'RESTful API' },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+      name: 'NestJS',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
+      name: 'GraphQL',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+      name: 'PostgreSQL',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+      name: 'MongoDB',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      name: 'MySQL',
+    },
+    { icon: 'devicon-github-original font-icons', name: 'Github' },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+      name: 'Git',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg',
+      name: 'Docker',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+      name: 'NginX',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+      name: 'AWS EC2',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
+      name: 'Bitbucket',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+      name: 'Figma',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+      name: 'HTML5',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+      name: 'CSS3',
+    },
+    { src: meter1, name: 'Web Development' },
+    { src: meter2, name: 'Responsive Design' },
+    { src: meter2, name: 'Microservices' },
+  ];
+
   return (
     <section className='skill' id='skills'>
       <Container>
@@ -39,165 +122,19 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className='skill-slider'
+                partialVisible
+                itemClass='carousel-item-padding-40-px'
               >
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-                    alt='skills'
-                  />
-                  <h5>Javascript</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg'
-                    alt='skills'
-                  />
-                  <h5>Typescript</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-                    alt='skills'
-                  />
-                  <h5>React</h5>
-                </div>
-                <div className='item'>
-                  <i class='devicon-nextjs-original font-icons'></i>
-                  <h5>NextJS</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
-                    alt='skills'
-                  />
-                  <h5>Tailwind</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter1} alt='skills' />
-                  <h5>Styled-Components</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
-                    alt='skills'
-                  />
-                  <h5>Node</h5>
-                </div>
-                <div className='item'>
-                  <i class='devicon-express-original font-icons'></i>
-                  <h5>Express</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter1} alt='skills' />
-                  <h5>RESTful API</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg'
-                    alt='skills'
-                  />
-                  <h5>NestJS</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
-                    alt='skills'
-                  />
-                  <h5>GraphQL</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
-                    alt='skills'
-                  />
-                  <h5>PostgreSQL</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
-                    alt='skills'
-                  />
-                  <h5>MongoDB</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
-                    alt='skills'
-                  />
-                  <h5>MySQL</h5>
-                </div>
-                <div className='item'>
-                  <i class='devicon-github-original font-icons'></i>
-                  <h5>Github</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
-                    alt='skills'
-                  />
-                  <h5>Git</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg'
-                    alt='skills'
-                  />
-                  <h5>Docker</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
-                    alt='skills'
-                  />
-                  <h5>NginX</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg'
-                    alt='skills'
-                  />
-                  <h5>AWS EC2</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg'
-                    alt='skills'
-                  />
-                  <h5>Bitbucket</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
-                    alt='skills'
-                  />
-                  <h5>Figma</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-                    alt='skills'
-                  />
-                  <h5>HTML5</h5>
-                </div>
-                <div className='item'>
-                  <img
-                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
-                    alt='skills'
-                  />
-                  <h5>CSS3</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter1} alt='skills' />
-                  <h5>Web Development</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter2} alt='skills' />
-                  <h5>Responsive Design</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter2} alt='skills' />
-                  <h5>Microservices</h5>
-                </div>
+                {skills.map((skill) => (
+                  <div className='item' key={skill.name}>
+                    {skill.src ? (
+                      <img src={skill.src} alt={skill.name} />
+                    ) : (
+                      <i className={skill.icon}></i>
+                    )}
+                    <h5>{skill.name}</h5>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </Col>
