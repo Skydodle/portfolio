@@ -375,6 +375,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 
+.skill-item:not(:last-child) {
+  margin-bottom: 50px; /* or any size you want for the gap */
+}
+
 .background-image-left {
   top: 28%;
   position: absolute;
