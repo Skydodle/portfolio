@@ -59,7 +59,6 @@ export const Banner = ({ isNavExpanded }) => {
               {`Hi I'm Johnny `}
               <div className='rotating-text'>&nbsp;{displayText}</div>
             </h1>
-
             <p>
               A Full Stack Software Engineer skilled at creating web
               applications with intuitive user interfaces, excelled in
