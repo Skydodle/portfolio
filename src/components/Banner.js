@@ -4,7 +4,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
 import { HashLink } from 'react-router-hash-link';
 
-export const Banner = () => {
+export const Banner = ({ isNavExpanded }) => {
   const [loopIndex, setLoopIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState('');
@@ -47,7 +47,10 @@ export const Banner = () => {
   };
 
   return (
-    <section className='banner' id='home'>
+    <section
+      className={`banner ${isNavExpanded ? 'nav-expanded' : ''}`}
+      id='home'
+    >
       <Container>
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
