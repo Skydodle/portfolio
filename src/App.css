@@ -287,7 +287,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .banner h1 {
   font-size: 40px; /* Adjust font size for small screens */
-  font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
