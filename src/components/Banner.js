@@ -64,7 +64,7 @@ export const Banner = ({ isNavExpanded }) => {
               A Full Stack Software Engineer skilled at creating web
               applications with intuitive user interfaces, excelled in
               developing elegant solutions to complex problems. Committed to
-              never stop learning and dive headfirst into new concepts
+              continuous learning and dive into new concepts
             </p>
             <HashLink smooth to='#connect'>
               <button>
