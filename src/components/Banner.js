@@ -57,21 +57,21 @@ export const Banner = ({ isNavExpanded }) => {
             <span className='tagline'>Welcome to my Portfolio </span>
             <h1>
               {`Hi I'm Johnny `}
-              <br></br>
-              <span className='wrap'>&nbsp;{displayText}</span>
-              <p>
-                A Full Stack Software Engineer skilled at creating web
-                applications with intuitive user interfaces, excelled in
-                developing elegant solutions to complex problems. Committed to
-                never stop learning and dive headfirst into new concepts
-              </p>
-              <HashLink smooth to='#connect'>
-                <button>
-                  Let's connect
-                  <ArrowRightCircle size={25} />
-                </button>
-              </HashLink>
+              <div className='rotating-text'>&nbsp;{displayText}</div>
             </h1>
+
+            <p>
+              A Full Stack Software Engineer skilled at creating web
+              applications with intuitive user interfaces, excelled in
+              developing elegant solutions to complex problems. Committed to
+              never stop learning and dive headfirst into new concepts
+            </p>
+            <HashLink smooth to='#connect'>
+              <button>
+                Let's connect
+                <ArrowRightCircle size={25} />
+              </button>
+            </HashLink>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt='Header Img' />
