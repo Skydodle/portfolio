@@ -12,7 +12,7 @@ const SOCIAL_LINKS = [
   { url: 'https://www.instagram.com/skydodle/', icon: instagramIcon },
 ];
 
-const NavBar = () => {
+const NavBar = ({ setNavExpanded }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -30,13 +30,20 @@ const NavBar = () => {
     setActiveLink(section);
   };
 
+  const handleNavToggle = () => {
+    setNavExpanded((prev) => !prev);
+  };
+
   return (
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
         <Navbar.Brand as={HashLink} smooth to='/'>
           <span className='logo'>JW</span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Toggle
+          aria-controls='basic-navbar-nav'
+          onClick={handleNavToggle}
+        />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             {NAV_SECTIONS.map((section) => (
