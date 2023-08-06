@@ -37,7 +37,7 @@ const NavBar = ({ setNavExpanded }) => {
   return (
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand as={HashLink} smooth to='/'>
+        <Navbar.Brand as={HashLink} smooth to='#home'>
           <span className='logo'>JW</span>
         </Navbar.Brand>
         <Navbar.Toggle
