@@ -422,6 +422,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: inline-block;
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .skill h2 {
+    font-size: 32px;
+  }
+}
 
 /************ Projects Css ************/
 .project {
@@ -582,6 +587,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 @media (max-width: 768px) {
+  .project h2 {
+    font-size: 32px;
+  }
   .project p {
     font-size: 16px;
     width: 80%;
