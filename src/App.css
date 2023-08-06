@@ -265,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 120px 0; /* Adjust padding for small screens */
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -286,12 +286,34 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
+  font-size: 40px; /* Adjust font size for small screens */
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+}
+/* Responsive styling for medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner {
+    padding: 180px 0; /* Increase padding for medium screens */
+  }
+
+  .banner h1 {
+    font-size: 50px; /* Adjust font size for medium screens */
+  }
+}
+
+/* Responsive styling for large screens */
+@media (min-width: 992px) {
+  .banner {
+    padding: 260px 0 100px 0; /* Restore original padding for large screens */
+  }
+
+  .banner h1 {
+    font-size: 65px; /* Restore original font size for large screens */
+  }
 }
 .banner p {
   color: #b8b8b8;
