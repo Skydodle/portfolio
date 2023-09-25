@@ -2,7 +2,7 @@
 
 Hello! 👋 This repository contains the source code for my personal portfolio website.
 
-Demo: https://johnnywu.dev/
+Live Site: https://johnnywu.dev/
 
 [<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW5ydXBuZWV0OW96eTB5MjBteWNwOHV1ZmJwenYzNHN0ZG5oMnlpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yE5bOeen0tJKSzCh9w/giphy-downsized-large.gif" width="600" alt="Portfolio GIF">](https://media.giphy.com/media/yE5bOeen0tJKSzCh9w/giphy.gif)
 
