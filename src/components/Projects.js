@@ -5,6 +5,10 @@ import shredderImage from '../assets/img/shredder.png';
 import SDCImage from '../assets/img/SDC.png';
 import HFLAImage from '../assets/img/HFLA.png';
 import HFLAImage2 from '../assets/img/HFLA2.png';
+import fetchPupImage from '../assets/img/fetchpup.gif';
+import spotProfileImage from '../assets/img/spotprofile.gif';
+import hawkShopImage from '../assets/img/hawkshop.gif';
+import sweetNibletImage from '../assets/img/sweetniblet.gif';
 
 export const Projects = () => {
   const openSourceProjects = [
@@ -33,7 +37,7 @@ export const Projects = () => {
       title: 'FetchPups',
       description:
         'Web app for shelterd dog database search with filters, personalized favorites & a match generator',
-      imgUrl: 'https://media.giphy.com/media/2sXHaogN0rtyuN1j4t/giphy.gif',
+      imgUrl: fetchPupImage,
       techStack: 'React - Typescript - Tailwind - Node - PostgreSQL',
       githubLink: 'https://github.com/Skydodle/fetch-pups',
       liveLink: 'https://skydodle.github.io/fetch-pups/',
@@ -42,7 +46,7 @@ export const Projects = () => {
       title: 'Spotify Profile',
       description:
         'Web app for visualizing personalized Spotify profile utilizing the Spotify Web API and OAuth2.0',
-      imgUrl: 'https://media.giphy.com/media/5PmikwWSPNTDNIR3J4/giphy.gif',
+      imgUrl: spotProfileImage,
       techStack: 'React - Styled Components - Node - Express',
       githubLink: 'https://github.com/Skydodle/spot-profile',
       liveLink: null,
@@ -51,7 +55,7 @@ export const Projects = () => {
       title: 'Hawk Shop',
       description:
         'E-Commerce web store for latest kicks and street wear, featuring favorite list for users, Q&A, and Reviews ',
-      imgUrl: 'https://media.giphy.com/media/vZhhLK5jwgb0s03Jzk/giphy.gif',
+      imgUrl: hawkShopImage,
       techStack: 'React - Styled Components - Node - REST',
       githubLink: 'https://github.com/Hawk-Shop/Katana',
       liveLink: null,
@@ -60,7 +64,7 @@ export const Projects = () => {
       title: 'Sweet Niblets',
       description:
         'Web app for karaoke with facial recognition avatar & audio recording, utilizing face-api, and Youtube API',
-      imgUrl: 'https://media.giphy.com/media/tJ4MNQs3B1M2J5YonR/giphy.gif',
+      imgUrl: sweetNibletImage,
       techStack: 'NextJS - Tailwind - Vercel - Cypress',
       githubLink: 'https://github.com/Kowalski-Group/rfp2204-blue-ocean',
       liveLink: null,
